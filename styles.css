@@ -5,6 +5,7 @@
     font-family:"Gilroy";
 }
 html, body{
+    scroll-behavior: smooth;
     height: 100%;
     width: 100%;
 }
@@ -188,18 +189,62 @@ html, body{
 
 }
 
-.project-section-wrapper{
+#project-section-wrapper{
     background-color: #dadada;
+}
+
+#experience-section-wrapper{
+    background-color: #dadada;
+    padding-bottom:3vw;
 }
 .project-section-title h1{
     font-size: 4vw;
     font-weight: 500;
     padding: 0 5vw;
 }
-.projects{
+.experience-section-title h1{
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 0 5vw;
+}
+.company-wrapper{
+    display:flex;
+    padding: 0 7vw;
+    margin-top: 3vw;
+    justify-content: space-between;
+}
+.right-section{
+    color: #333;
+    font-size: 2vw;
+}
+.company-wrapper .role{
+    font-size: 2vw;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1vh;
     
+}
+.company-wrapper .company-name{
+    text-transform: uppercase;
+    font-size: 1vw;
     
+}
+.company-wrapper .date-duration{
+    text-transform: uppercase;
+    font-size: 1vw;
+    padding-bottom: 1vh;
+    
+}
+.tech-stack{
+    margin-top: 1vh;
+    font-size: 1vw;
+    color: #333;
+    text-transform: uppercase;
+    font-style: italic;
 
+}
+.projects{
     display: flex;
     padding: 0 35px;
     align-items: center;
@@ -315,4 +360,37 @@ font-size: 1.31rem;
 .projects .wrapper .carousel {
     grid-auto-columns: 100%;
 }
+}
+
+
+#footer{
+    height:70vh;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+#footer li{
+    list-style: none;
+    padding-bottom: 3vh;
+}
+#footer a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.address{
+    color: #fff;
+}
+#footer h5{
+    font-size: 1.5vw;
+    color: #3f3f3f;
+    padding-bottom: 5vh;
+}
+
+
+.copyright{
+    color: #3f3f3f;
+    font-size: 1.5vw;
 }
