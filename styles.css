@@ -211,11 +211,18 @@ html, body{
     display:flex;
     padding: 0 7vw;
     margin-top: 3vw;
-    justify-content: space-between;
+    
+}
+.left-section{
+    width: 30vw;
 }
 .right-section{
+    width: 55vw;
     color: #333;
     font-size: 2vw;
+}
+.right-section li ul{
+    padding-top: 2vh;
 }
 .company-wrapper .role{
     font-size: 2vw;
@@ -393,4 +400,7 @@ font-size: 1.31rem;
 .copyright{
     color: #3f3f3f;
     font-size: 1.5vw;
+}
+.role-description li{
+    padding-bottom: 3vh;
 }
