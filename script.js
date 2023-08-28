@@ -139,3 +139,24 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach((card, index) => {
+    card.addEventListener('click', function() {
+        // Assuming URLs are stored in an array
+        const urls = [
+            'https://asbdesign.in/',
+            'https://github.com/sceary-expert/Codeforces-Problem-of-The-Day',
+            'https://github.com/sceary-expert/Glimpse-Portal-in-React',
+            'https://github.com/sceary-expert/epic-count-converter',
+            'https://github.com/sceary-expert/Blog-App-in-React-and-GO',
+            'https://github.com/sceary-expert/reunion_assessment_real_estate_buy_and_sell_react'
+            // ... more URLs ...
+        ];
+
+        // Open the corresponding URL based on the index
+        window.location.href = urls[index];
+    });
+});
